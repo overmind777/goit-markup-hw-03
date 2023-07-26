@@ -6,6 +6,7 @@
     --color-FFFFFF: #FFFFFF;
     --color-f4f4fd: #f4f4fd;
     --color-404bbf: #404bbf;
+    --color-e7e9fc: #e7e9fc;
 }
 
 h1,
@@ -47,7 +48,13 @@ body {
 
 .container {
     width: 1158px;
-    padding: 0 15px 0 15px,
+    padding: 0 15px 0 15px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.container:first-child {
+    display: flex;
 }
 
 .nav-container {
@@ -63,6 +70,30 @@ body {
     list-style: none;
     display: flex;
     gap: 40px;
+}
+
+.portfolio-list-buttons {
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-list-element {
+    width: calc((100% - 48px) / 3);
+}
+
+.names-apps {
+    padding: 32px 16px;
+    border: 1px solid var(--color-e7e9fc);
+    border-top: none;
+    margin-bottom: 8px;
 }
 
 .list-link,
@@ -98,6 +129,7 @@ body {
     color: var(--color-FFFFFF);
     background-color: var(--color-4d5ae5);
     cursor: pointer;
+    display: block;
 }
 
 .second {
@@ -129,6 +161,15 @@ body {
 .fourth {
     background-color: var(--color-f4f4fd);
     padding: 120px 0;
+}
+
+.fourth-list {
+    display: flex;
+    gap: 24px;
+}
+
+.fourth-list-element {
+    width: calc((100% - 72px) / 4);
 }
 
 .names-positions {
@@ -189,6 +230,16 @@ body {
     background-color: var(--color-404bbf);
 }
 
+.fourth-button {
+    padding: 12px 24px;
+    border: 1px solid var(--color-e7e9fc);
+    border-radius: 4px;
+}
+
+.fourth-button:hover, .fourth-button:focus  {
+    border: 1px solid transparent;
+}
+
 .logo, .footer a {
     color: var(--color-4d5ae5);
     font-family: "Raleway", sans-serif;
@@ -212,7 +263,7 @@ body {
 }
 
 .list-link:hover, .list-link:focus, .address-link:hover, .address-link:focus {
-    color: #404bbf;
+    color: var(--color-404bbf);
 }
 
 .address {
@@ -240,8 +291,13 @@ body {
     padding: 100px 0;
 }
 
+.footer-link {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .footer .logo-studio-footyer {
-    color: #f4f4fd;
+    color: var(--color-f4f4fd);
 }
 
 .footer .footer-paragraph {
