@@ -73,6 +73,7 @@ body {
 }
 
 .portfolio-list-buttons {
+    display: flex;
     justify-content: center;
     gap: 24px;
     margin-bottom: 72px;
@@ -83,6 +84,7 @@ body {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    width: calc((100% - 48px) / 3);
 }
 
 .portfolio-list-element {
@@ -168,10 +170,6 @@ body {
     gap: 24px;
 }
 
-.fourth-list-element {
-    width: calc((100% - 72px) / 4);
-}
-
 .names-positions {
     padding: 32px 0;
 }
@@ -204,7 +202,7 @@ body {
     margin-bottom: 8px;
 }
 
-.fourth-list {
+.fourth-list-element {
     background-color: var(--color-FFFFFF);
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
