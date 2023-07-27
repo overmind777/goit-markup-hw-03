@@ -55,6 +55,7 @@ body {
 }
 
 .list {
+    display: flex;
     list-style: none;
 }
 
@@ -162,7 +163,6 @@ body {
 .second-section-list,
 .third-section-list,
 .fourth-section-list {
-    display: flex;
     gap: 24px;
 }
 
