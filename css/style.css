@@ -59,6 +59,7 @@ body {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+    
 }
 
 .link {
@@ -103,6 +104,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-studio {
@@ -241,21 +243,14 @@ body {
 }
 
 .portfolio-list {
-    /* display: flex;
-    flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 48px; */
+    row-gap: 48px;
     flex-wrap: wrap;
     padding: 0;
 } 
 
 .portfolio-list-element {
     width: var(--width-48px-3);
-    margin-right: 14px;
-}
-
-.portfolio-list-element:nth-last-child(3) {
-    margin-right: 0;
 }
 
 .portfolio-list-buttons {
