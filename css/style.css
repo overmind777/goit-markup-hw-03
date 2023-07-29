@@ -7,6 +7,8 @@
     --color-f4f4fd: #f4f4fd;
     --color-404bbf: #404bbf;
     --color-e7e9fc: #e7e9fc;
+    --width-72px-4: calc((100% - 72px) / 4);
+    --width-48px-3: calc((100%- 48px) / 3); 
 }
 
 html {
@@ -246,7 +248,7 @@ body {
 } 
 
 .portfolio-list-element {
-    width: calc((100%-48px)/3);
+    width: var(--width-48px-3);
 }
 
 .portfolio-list-buttons {
@@ -264,15 +266,15 @@ body {
 }
 
 .second-section-list-element {
-    width: calc((100% - 72px) / 4);
+    width: var(--width-72px-4);
 }
 
 .third-section-list-element {
-    width: calc((100% - 48px) / 3);
+    width: var((--width-48px-3));
 }
 
 .fourth-section-list-element {
-    width: calc((100% - 72px) / 4);
+    width: var(--width-72px-4);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--color-FFFFFF);
 }
