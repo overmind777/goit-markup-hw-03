@@ -42,7 +42,7 @@ body {
     color: var(--color-434455);
 }
 
-.first-title.visually-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
