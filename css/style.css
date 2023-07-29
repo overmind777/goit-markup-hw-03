@@ -73,6 +73,10 @@ body {
     margin-left: auto;
 }
 
+img {
+    display: block;
+}
+
 .address-list,
 .menu {
     display: flex;
@@ -242,7 +246,7 @@ body {
     column-gap: 24px;
     row-gap: 48px;
     flex-wrap: wrap;
-    /* padding: 0; */
+    padding: 0;
 } 
 
 .portfolio-list-element {
