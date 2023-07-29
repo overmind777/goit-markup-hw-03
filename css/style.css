@@ -7,8 +7,8 @@
     --color-f4f4fd: #f4f4fd;
     --color-404bbf: #404bbf;
     --color-e7e9fc: #e7e9fc;
-    --width-72px-4: calc((100% - 72px) / 4);
-    --width-48px-3: calc((100%- 48px) / 3); 
+    --width-72px-4: (calc((100% - 72px) / 4));
+    --width-48px-3: (calc((100%- 48px) / 3)); 
 }
 
 html {
@@ -42,7 +42,7 @@ body {
     color: var(--color-434455);
 }
 
-.visually-hidden {
+.first-title.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -59,7 +59,7 @@ body {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-    
+
 }
 
 .link {
@@ -246,7 +246,7 @@ body {
     column-gap: 24px;
     row-gap: 48px;
     flex-wrap: wrap;
-    padding: 0;
+    /* padding: 0; */
 } 
 
 .portfolio-list-element {
@@ -260,9 +260,12 @@ body {
 }
 
 .names-apps {
-    padding: 32px 0;
+    padding: 32px 16px;
     border: 1px solid var(--color-e7e9fc);
     border-top: none;
+}
+
+.names-apps h2 {
     margin-bottom: 8px;
 }
 
@@ -271,7 +274,7 @@ body {
 }
 
 .third-section-list-element {
-    width: var((--width-48px-3));
+    width: var(--width-48px-3);
 }
 
 .fourth-section-list-element {
