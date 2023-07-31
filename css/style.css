@@ -39,7 +39,7 @@ body {
     color: var(--color-434455);
 }
 
-.container .visually-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
